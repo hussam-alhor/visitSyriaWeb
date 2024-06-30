@@ -1,0 +1,134 @@
+.NavVisit {
+    background-color: rgb(179, 114, 114);
+    color: white;
+    /* position: absolute !important; */
+    width: 100vw !important;
+    font-weight: 700;
+}
+.NavVisit .NavVisitLogo {
+    font-size: 28px;
+    color: white !important;
+}
+.NavVisit span {
+    color: var(--main-color);
+}
+.NavVisit .navbar-toggler {
+    border: none !important;
+}
+.NavVisit .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.navCenter {
+    justify-content: center !important;
+}
+.navCenter .navGap {
+    gap: 50px;
+}
+.navGap a {
+    text-decoration: none;
+    color: rgba(196, 196, 196, 1);
+    font-weight: 400 !important;
+}
+.navGap a.active {
+    color: white;
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--main-color);
+}
+.navLove {
+    background-color: var(--main-color);
+    /* padding: 5px 7px 5px 15px; */
+    padding: 4px 3px 0px 0px; 
+    border-radius: 0px 50px 50px 0px;
+    width: 40px;
+    height: 35px;
+}
+.navPerson {
+    display: block;
+    background-color: rgba(166, 165, 165, 1);
+    border-radius: 20px ;
+    border: 1px solid white;
+    position: relative;
+    left: 14px ;
+    width: 35px;
+    height: 35px;
+}
+.navPerson img {
+    width: 25px;
+    background-color: white;
+    padding: 2px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.offcanvas-header {
+    position: relative;
+}
+.offcanvas-header button {
+    position: absolute;
+    left: 0px;
+}
+.offcanvas-header button:focus {
+    box-shadow: none !important;
+}
+
+.personContent  {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .navCenter .navGap {
+        gap: 10px;
+    }
+}
+@media (max-width: 575px) {
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .navLove {
+        display: none;
+    }
+    .person {
+        display: flex ;
+        gap: 100px;
+    }
+    .navPerson {
+        background-color:  transparent;
+        left: -50px;
+    }
+    .navPerson img {
+        width: 100px;
+    }
+    .personContent {
+        display: block;
+    }
+    .personContent img {  
+    padding: 0px 40px;
+    height: 15px;
+    }
+    .NavVisit .container {
+        flex-direction: row-reverse !important;
+    }
+    .navGap a { 
+        color: black;
+        width: 90%;
+        padding: 5px 20px;
+        border-radius: 10px;
+    }
+    .navGap a.active {
+        color: black ;
+        background-color:  var(--main-color);
+        border: none;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .container, .container-sm {
+        max-width: 720px !important;
+    }
+}

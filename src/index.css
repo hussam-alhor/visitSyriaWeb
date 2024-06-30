@@ -1,0 +1,50 @@
+/* @font-face {
+    src: url('/public/fonts/frutigerltarabic75black.ttf');
+    src: url('/public/fonts/FrutigerLTArabic65Bold.ttf');
+    src: url('/public/fonts/FrutigerLTArabic55Roman.ttf');
+    font-family: 'Frutiger';
+}
+html {
+    direction: rtl;    
+}
+
+*{
+    font-family: 'Frutiger';
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0 ;
+} */
+
+/* @font-face {
+    src: url('/public/assets/font/FrutigerLTArabic45Light.ttf');
+    font-family: 'Frutiger45';
+} */
+@font-face {
+    src: url('/public/assets/font/FrutigerLTArabic55Roman.ttf');
+    font-family: 'Frutiger55';
+}
+@font-face {
+    src: url('/public/assets/font/FrutigerLTArabic65Bold.ttf');
+    font-family: 'Frutiger65';
+}
+@font-face {
+    src: url('/public/assets/font/frutigerltarabic75black.ttf');
+    font-family: 'Frutiger75';
+}
+html {
+    direction: rtl;
+   
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --main-color : rgba(141, 211, 187, 1);
+    --bg-color : rgb(249 243 243);;
+    
+}
+body {
+    background-color: var(--bg-color) !important;
+}
