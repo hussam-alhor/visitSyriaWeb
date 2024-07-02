@@ -1,7 +1,6 @@
 .NavVisit {
-    background-color: rgb(179, 114, 114);
     color: white;
-    /* position: absolute !important; */
+    position: absolute !important; 
     width: 100vw !important;
     font-weight: 700;
 }
