@@ -17,7 +17,8 @@ const HeroSection = ({ images, backgroundImage }) => {
           <p className="hero-subtitle">افضل الوجهات المثالية</p>
          
           <button className="explore-button">
-            استكشف المزيد<img src={back} alt="" /></button>
+            استكشف المزيد<img src={back} alt="" />
+          </button>
          
         </div>
         <div className="carousel-container">
@@ -42,15 +43,15 @@ const HeroSection = ({ images, backgroundImage }) => {
   );
 };
 
-HeroSection.propTypes = {
-  images: PropTypes.arrayOf(
-    PropTypes.shape({
-      src: PropTypes.string.isRequired,
-      alt: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-  backgroundImage: PropTypes.string.isRequired,
-};
+// HeroSection.propTypes = {
+//   images: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       src: PropTypes.string.isRequired,
+//       alt: PropTypes.string.isRequired,
+//       label: PropTypes.string.isRequired,
+//     })
+//   ).isRequired,
+//   backgroundImage: PropTypes.string.isRequired,
+// };
 
 export default HeroSection;
