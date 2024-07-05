@@ -1,0 +1,88 @@
+.btn-design {
+    background-color: #8DD3BB !important;
+    border-color: #8DD3BB;
+    height: 35.87px;
+    color: #112211 !important;
+    border-radius: 4.48px;
+    /* padding: 8.97px 17.93px; */
+    font-family: 'Frutiger LT Arabic';
+    /* font-size: 17.93px; */
+    font-weight: 300;
+    line-height: 34.42px;
+
+    padding: 10px 20px;
+    font-size: 16px;
+
+}
+
+
+
+
+.btn-design img {
+margin-left: 8px; /* Adjust spacing between text and image as needed */
+}
+.card-style{
+    font-family: Frutiger LT Arabic;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-tag {
+    font-family: Frutiger LT Arabic;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 39.09px;
+    text-align: right;
+
+}
+
+.rating {
+   
+    display: inline-block;
+  
+    font-size: 18px;
+    font-weight: 550;
+    line-height: 32.62px;
+
+
+}
+.place-description{
+    
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26.87px;
+
+}
+
+
+.location{
+    font-size: 18px;
+font-weight: 400;
+line-height: 20.58px;
+
+
+
+}
+
+.title-card{
+ 
+font-size: 24px;
+font-weight: 700;
+line-height: 46.05px;
+
+
+}
+.location-icon{
+    width: 25px;
+    height: 28px;
+    margin-right: 5px;
+    /* padding: 5px; */
+}
+.card-mar{
+    border-radius: 10px;
+}
