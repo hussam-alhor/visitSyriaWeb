@@ -1,7 +1,7 @@
 .NavVisit {
     color: white;
     position: absolute !important; 
-    width: 100vw !important;
+    width: 100% ;
     font-weight: 700;
 }
 .NavVisit .NavVisitLogo {

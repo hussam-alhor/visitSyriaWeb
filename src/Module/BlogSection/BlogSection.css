@@ -1,0 +1,42 @@
+.blog{
+
+    padding: 2rem;
+    background-color: #fff;
+
+}
+
+  .para p{
+    font-size: 25px;
+margin-top: 6rem;
+  }
+
+  .blog-content img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+ 
+.button{
+    background-color: rgba(141, 211, 187, 1);
+}
+  .custom-button {
+   
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-button:hover {
+    background-color: #218838;
+  }
+.img{
+    position: relative;
+
+}
+.img-fluid{
+    position: absolute;
+    z-index: 5;
+}
