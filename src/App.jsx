@@ -3,35 +3,37 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './Module/Footer/Footer';
 import NavBar from './Module/NavBar/NavBar';
-import ListOfComponents from './Module/SharedComponents/ListOfComponents';
-
-import StepIndicator from './Module/SharedComponents/StepIndicator';
-import ShowRestaurants from './Module/Restaurants/ShowRestaurants';
-import TabSection from './Module/TabComponent/TabSection';
-
+import ShowItemsComponents from '../src/Module/Items/ShowItemsComponents';
+import HeroComponent from './Module/HeroComponentwithSearch/HeroComponent';
 function App() {
 
+return (
+
+  <>
+    <NavBar />
+     
+
+    <Routes>
+      <Route path='/show-items' element={<ShowItemsComponents  />} />
+      <Route path='/hero-test' element ={
+            <HeroComponent
+                backgroundImage={backgroundImage}
+                showSearch={true}  // or showSearch={false} to hide the search bar
+              />} 
+        />
+   
+    </Routes>
 
 
 
+    <Footer />
 
-  return (
-
-    <>
-      <NavBar />
-
-
-      <Routes>
-        <Route path='/restaurants' element={<TabSection  />} />
-
-      </Routes>
-
-      <Footer />
-    </>
-
-  );
+</>
+);
 };
 
 
 
 export default App;
+
+
