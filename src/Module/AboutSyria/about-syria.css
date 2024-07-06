@@ -1,0 +1,200 @@
+.about {
+    z-index: 0;
+    min-height: 110vh;
+}
+
+.about .about-hero {
+    min-height: 100vh;
+}
+
+.about .about-hero .about-top-section {
+    height: calc(100vh - 96px);
+}
+
+.about .about-hero .search-input {
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 55px;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .about-hero .search-input .search-btn {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+    margin-right: 10px;
+    border-radius: 45.5px;
+    background-color: rgba(141, 211, 187, 1);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 1);
+    transition: .3s ease;
+}
+
+
+.about .about-hero .search-input input {
+    all: unset;
+    padding: 20px 0;
+    margin: 0 45px 0;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 59.97px;
+    text-align: right;
+}
+
+.about .about-hero .search-input input::placeholder {
+    font-family: Cairo;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 59.97px;
+    text-align: right;
+    color: rgba(113, 113, 113, 1);
+}
+
+.about .about-hero .tabs {
+    width: 100%;
+    height: 96px;
+    background-color: rgba(141, 211, 187, 1);
+}
+
+.tabs-div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about .tabs a {
+    display: block;
+    text-align: center;
+    padding: 10px 22px 40px 22px;
+    border-radius: 16px 15px 0px 0px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 53.73px;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.about .tabs a.active ,
+.about .tabs a:hover {
+    background-color: white;
+    color: black;
+}
+
+.about ul {
+    position: absolute;
+    list-style: none;
+    box-shadow: 0 0 10px 0 #ccc;
+    left: 50%;
+    top: 70%;
+    min-width: 100%;
+    transform: translate(-50%);
+    background-color: white;
+    padding: 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 53.73px;
+    color: rgba(0, 0, 0, 0.47);
+    direction: rtl;
+    flex-direction: column;
+    z-index: 2;
+    display: none;
+}
+
+.about ul.active {
+    display: flex;
+}
+
+.about ul li {
+    opacity: 50%;
+    padding: 10px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.about ul li:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.about ul li:hover {
+    opacity: 100%;
+}
+
+.about label {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 53.73px;
+    color: rgba(0, 0, 0, 0.47);
+    direction: rtl;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+
+@media screen and (max-width: 1050px) {    
+    .about .about-hero .search-input {
+        width: 700px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {    
+    .about .about-hero .search-input .search-btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 70%);
+        width: 100%;
+    }
+
+    .about .about-hero .search-input {
+        width: 90%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {    
+    .about .tabs {
+        height: max-content !important;
+    }
+
+    .about .tabs-div {
+        flex-direction: column;
+    }
+}
+
+.about-cards {
+    margin-bottom: 80px;
+}
+
+.about-cards div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.about-cards div .about-card {
+    flex-basis: 30%;
+    background-color: white;
+    padding: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .about-cards div .about-card {
+        flex-basis: 100%;
+    }
+}
