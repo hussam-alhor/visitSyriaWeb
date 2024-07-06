@@ -7,6 +7,7 @@ import ListOfComponents from './Module/SharedComponents/ListOfComponents';
 
 import StepIndicator from './Module/SharedComponents/StepIndicator';
 import ShowRestaurants from './Module/Restaurants/ShowRestaurants';
+import TabSection from './Module/TabComponent/TabSection';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
 
 
       <Routes>
-        <Route path='/restaurants' element={<ShowRestaurants  />} />
+        <Route path='/restaurants' element={<TabSection  />} />
 
       </Routes>
 

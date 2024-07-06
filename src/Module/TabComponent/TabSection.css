@@ -1,0 +1,13 @@
+.custom-nav {
+    background-color: #8DD3BB;
+}
+
+.nav-pills .nav-link {
+    color: #fff;
+    margin: 0 5px;
+}
+
+.nav-pills .nav-link.active-tab {
+    background-color: #fff;
+    color: #8DD3BB;
+}

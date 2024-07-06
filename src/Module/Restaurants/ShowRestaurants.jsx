@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ListOfComponents from '../SharedComponents/ListOfComponents';
+import FirstSection from '../HeroSectionsComponents/FirstSection';
+import TabSection from '../TabComponent/TabSection';
 
 const ShowRestaurants = () => {
     const [restaurants, setRestaurants] = useState([]);
@@ -33,6 +35,8 @@ const ShowRestaurants = () => {
 
     return (
         <div>
+            <FirstSection/>
+            <TabSection />
             <ListOfComponents restaurants={restaurants} />
         </div>
     );
