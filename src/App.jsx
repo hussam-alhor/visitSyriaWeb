@@ -13,13 +13,13 @@ function App() {
      <NavBar/>
 
      <Routes>
-     <Route path='' element={<LandingPage/>} />
-     <Route path='' element={<HeroSection images={images} backgroundImage={hero} />} />
-     <Route path='/aboutSyria' element={<AboutSyria type={'سياحة'}/>} />
+      <Route path='/' element={<LandingPage/>} />
+      {/* <Route path='' element={<HeroSection images={images} backgroundImage={hero} />} />  */}
+      <Route path='/aboutSyria' element={<AboutSyria type={'سياحة'}/>} />
       <Route path='/aboutSyria/nature' element={<AboutSyria type={'طبيعة'}/>} />
       <Route path='/aboutSyria/marklands' element={<AboutSyria type={'معالم'}/>} />
       <Route path='/aboutSyria/history' element={<AboutSyria type={'تاريخ'}/>} />
-      <Route path='/aboutSyria/social' element={<AboutSyria type={'حضارات'}/>} />
+      <Route path='/aboutSyria/social' element={<AboutSyria type={'حضارات'}/>} /> 
 
      </Routes>
      <Footer/>
