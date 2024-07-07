@@ -8,6 +8,7 @@ import card2 from '/assets/img/Card 3.png'
 import card3 from '/assets/img/Card 4.png'
 
 import HeroSection from './Module/Hero/HeromSection'
+import Register from './Module/Auth/Register'
 function App() {
 
   const images = [
@@ -20,6 +21,7 @@ function App() {
      <NavBar/>
      <Routes>
      <Route path='' element={<HeroSection images={images} backgroundImage={hero} />} />
+     <Route path='/Register' element={<Register/>} />
      </Routes>
      <Footer/>
     </>
