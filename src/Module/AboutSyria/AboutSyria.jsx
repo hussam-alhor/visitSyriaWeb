@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../../assets/about-syria-hero.png'
+import img from '/assets/img/hero.png'
 import './about-syria.css'
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom';
