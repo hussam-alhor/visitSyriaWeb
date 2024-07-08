@@ -1,7 +1,7 @@
-import { Route, Routes } from 'react-router-dom';
+// import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Footer from './Module/Footer/Footer';
-import NavBar from './Module/NavBar/NavBar';
+// import Footer from './Module/Footer/Footer';
+// import NavBar from './Module/NavBar/NavBar';
 import LandingPage from './pages/LandingPage/LandingPage';
 import HeroSection from './Module/Hero/HeromSection'
 import AboutSyria from './Module/AboutSyria/AboutSyria'
@@ -12,6 +12,7 @@ import Footer from './Module/Footer/Footer';
 import NavBar from './Module/NavBar/NavBar';
 import ShowItemsComponents from '../src/Module/Items/ShowItemsComponents';
 import HeroComponent from './Module/HeroComponentwithSearch/HeroComponent';
+import backgroundImage from '/assets/img/hero.png'
 function App() {
 
   return (
