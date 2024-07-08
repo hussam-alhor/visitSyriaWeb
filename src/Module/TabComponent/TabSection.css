@@ -1,0 +1,55 @@
+.custom-nav {
+    background-color: #8DD3BB;
+
+    width: Hug (1,390.62px)px;
+    height: 65px;
+    top: 650px;
+    /* left: -10px; */
+
+    gap: 80px;
+    opacity: 0px;
+
+}
+
+.nav-pills .nav-link {
+
+    margin: 0 5px;
+    font-family: Frutiger LT Arabic;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 53.73px;
+    text-align: center;
+
+    color: #4B7063;
+
+}
+
+.nav-pills .nav-link.active-tab {
+    background-color:  #F3F3F3 !important;
+
+    color: #000000 !important;
+}
+.tab-with-overlay{
+    position: absolute;
+    /* bottom: 20px; */
+    width: 100%;
+ 
+}
+.custom-nav .dropdown-button {
+    margin-right: 10px;
+    background-color:  #F3F3F3 !important;
+    color:  #4B7063 !important;
+  }
+  
+  .custom-nav .dropdown-menu {
+    min-width: 150px;
+
+  }
+  
+.drop-downC{
+    background-color:  #F3F3F3 !important;
+    color:  #4B7063 !important;
+}
+
+
+  
