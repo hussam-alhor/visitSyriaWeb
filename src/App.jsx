@@ -13,30 +13,31 @@ import NavBar from './Module/NavBar/NavBar';
 import ShowItemsComponents from '../src/Module/Items/ShowItemsComponents';
 import HeroComponent from './Module/HeroComponentwithSearch/HeroComponent';
 import backgroundImage from '/assets/img/hero.png'
+import TestExplore from './Module/TestExplore/TestExplore'
 function App() {
 
   return (
     <>
-     <NavBar/>
+      <NavBar />
 
-     <Routes>
-      <Route path='/' element={<LandingPage/>} />
-      {/* <Route path='' element={<HeroSection images={images} backgroundImage={hero} />} />  */}
-      <Route path='/aboutSyria' element={<AboutSyria type={'سياحة'}/>} />
-      <Route path='/aboutSyria/nature' element={<AboutSyria type={'طبيعة'}/>} />
-      <Route path='/aboutSyria/marklands' element={<AboutSyria type={'معالم'}/>} />
-      <Route path='/aboutSyria/history' element={<AboutSyria type={'تاريخ'}/>} />
-      <Route path='/aboutSyria/social' element={<AboutSyria type={'حضارات'}/>} /> 
-      <Route path='/show-items' element={<ShowItemsComponents  />} />
-      <Route path='/hero-test' element ={
-            <HeroComponent
-                backgroundImage={backgroundImage}
-                showSearch={true}  // or showSearch={false} to hide the search bar
-              />} 
+      <Routes>
+        <Route path='/' element={<LandingPage />} />
+        {/* <Route path='' element={<HeroSection images={images} backgroundImage={hero} />} />  */}
+        <Route path='/aboutSyria' element={<AboutSyria type={'سياحة'} />} />
+        <Route path='/aboutSyria/nature' element={<AboutSyria type={'طبيعة'} />} />
+        <Route path='/aboutSyria/marklands' element={<AboutSyria type={'معالم'} />} />
+        <Route path='/aboutSyria/history' element={<AboutSyria type={'تاريخ'} />} />
+        <Route path='/aboutSyria/social' element={<AboutSyria type={'حضارات'} />} />
+        <Route path='/show-items' element={<ShowItemsComponents />} />
+        <Route path='/hero-test' element={
+          <HeroComponent
+            backgroundImage={backgroundImage}
+            showSearch={true}  // or showSearch={false} to hide the search bar
+          />}
         />
-
-     </Routes>
-     <Footer/>
+        <Route path='/explore' element={<TestExplore />} />
+      </Routes>
+      <Footer />
     </>
   )
 }
