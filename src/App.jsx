@@ -5,8 +5,14 @@ import NavBar from './Module/NavBar/NavBar';
 import LandingPage from './pages/LandingPage/LandingPage';
 import HeroSection from './Module/Hero/HeromSection'
 import AboutSyria from './Module/AboutSyria/AboutSyria'
+import BookingForm from './Module/Booking/BookingForm';
+
 function App() {
 
+
+  
+
+   
 
   return (
     <>
@@ -20,8 +26,22 @@ function App() {
       <Route path='/aboutSyria/marklands' element={<AboutSyria type={'معالم'}/>} />
       <Route path='/aboutSyria/history' element={<AboutSyria type={'تاريخ'}/>} />
       <Route path='/aboutSyria/social' element={<AboutSyria type={'حضارات'}/>} /> 
-
+       <Route path='/Booking-form' element={ <BookingForm
+      fullNamePlaceholder="الاسم الكامل"
+      phonePlaceholder="رقم التليفون"
+      emailPlaceholder="عنوان البريد الإلكتروني"
+      checkInPlaceholder="الدخول"
+      checkOutPlaceholder="الخروج"
+      guestsPlaceholder="عدد الضيوف"
+      roomTypePlaceholder="نوع الغرفة"
+      descriptionPlaceholder="الوصف"
+      submitButtonText="احجز الآن"
+    
+      ratingCount="54"
+ 
+    />}/> 
      </Routes>
+    
      <Footer/>
     </>
   )
