@@ -57,13 +57,14 @@ const ShowBlog = ({ type }) => {
 
     useEffect(() => {
       // Fetch user data when component mounts
-      const fetchUserData = async () => {
+      const BlogsData = async () => {
         try {
           const response = await axios.get(`http://localhost:8000/api/all_blogs`, {
            
           });
           const data= response.data.blog;
           console.log(data);
+          setInfo(data);
   
 
         } catch (error) {
@@ -72,8 +73,9 @@ const ShowBlog = ({ type }) => {
       };
      
   
-      fetchUserData();
+      BlogsData();
     }, []);
+  
     const { pathname } = useLocation();
 
 return (
@@ -95,10 +97,10 @@ return (
         { info.map((info_card,index) => (
                             <MyCard 
                                 key={index} 
-                                img={info_card.img} 
-                                description={info_card.description} 
+                                img={info_card.main_image} 
+                                description={info_card.content} 
                                 title={info_card.title} 
-                                city={info_card.city} 
+                               // city={info_card.city} 
                                 id={info_card.id}
                             />
                         )) }
