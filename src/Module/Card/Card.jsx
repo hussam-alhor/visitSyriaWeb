@@ -1,25 +1,36 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card, Row , Col } from "react-bootstrap";
 import "./Card.css";
+import back from '/assets/img/chevron_back.png'
+import cityicon from '/assets/img/Icon-Location.png'
+import { Link  } from 'react-router-dom';
 
-const MyCard = ({ img, title, description }) => {
+const MyCard = ({ img, title, description , city , id }) => {
+
   return (
-    <Card className="about-card mx-4 my-4 d-flex flex-column">
-      <div className="row no-gutters flex-grow-1">
-        <div className="col-md-4">
-          <Card.Img variant="top" src={img} alt={img} />
-        </div>
-        <div className="col-md-8 d-flex flex-column justify-content-center">
-          <Card.Body className="flex-grow-1">
-            <Card.Title>{title}</Card.Title>
-            <Card.Text>
-              {description}
-            </Card.Text>
-          </Card.Body>
-          <Button className="moreBtn">Read More &gt;</Button>
-        </div>
-      </div>
-    </Card>
+    <Card style={{ width: '18rem' }}>
+      <Row>
+    <Card.Img variant="top" src={img} />
+    <Col>
+    <Card.Body>
+      <Card.Title>{title}</Card.Title>
+      <Card.Text>{description}
+      </Card.Text>
+      <Row>
+      <button className="explore-button">
+      <Link to={`/blog/${id}`}> اقرأ المزيد<img src={back} alt="" /></Link>
+          
+      </button>
+      
+      <button className="city-button">
+           <img src={cityicon} alt="" /> {city}
+      </button>
+      
+      </Row>
+    </Card.Body>
+    </Col>
+    </Row>
+  </Card>
   );
 };
 
