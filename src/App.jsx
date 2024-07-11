@@ -15,7 +15,7 @@ import HeroComponent from './Module/HeroComponentwithSearch/HeroComponent';
 import backgroundImage from '/assets/img/hero.png'
 import ShowBlog from './Module/Blog/ShowBlog';
 import BlogDetails from './Module/Blog/BlogDetails';
-
+import Register from './Module/Auth/Register'
 import BookingForm from './Module/Booking/BookingForm';
 
 function App() {
@@ -50,7 +50,7 @@ function App() {
                 showSearch={true}  // or showSearch={false} to hide the search bar
               />} 
         />
-       <Route path='/auth' element={<Register/>}/>
+       <Route path='/Register' element={<Register/> }/>
           <Route path='/Booking-form' element={ <BookingForm
           fullNamePlaceholder="الاسم الكامل"
           phonePlaceholder="رقم التليفون"
