@@ -13,6 +13,7 @@ import NavBar from './Module/NavBar/NavBar';
 import ShowItemsComponents from '../src/Module/Items/ShowItemsComponents';
 import HeroComponent from './Module/HeroComponentwithSearch/HeroComponent';
 import backgroundImage from '/assets/img/hero.png'
+import Register from './Module/Auth/Register';
 function App() {
 
   return (
@@ -34,7 +35,7 @@ function App() {
                 showSearch={true}  // or showSearch={false} to hide the search bar
               />} 
         />
-
+      <Route path='/auth' element={<Register/>}/>
      </Routes>
      <Footer/>
     </>
