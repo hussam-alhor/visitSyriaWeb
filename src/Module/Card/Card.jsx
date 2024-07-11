@@ -18,7 +18,7 @@ const MyCard = ({ img, title, description , city , id }) => {
       </Card.Text>
       <Row>
       <button className="explore-button">
-      <Link to={`/blog/${id}`}>{id}  اقرأ المزيد<img src={back} alt="" /></Link>
+      <Link to={`/blog/${id}`}> اقرأ المزيد<img src={back} alt="" /></Link>
           
       </button>
       

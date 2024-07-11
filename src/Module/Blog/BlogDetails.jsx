@@ -1,20 +1,54 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {useParams} from "react-router-dom"
 import img from '/assets/img/hero.png'
 import img1 from '/assets/img/SURİYE BUSRA ROMA ANTİK TİYATRO 6 1.png'
 import img2 from '/assets/img/IMG_20191129_114543 1.png'
 import './BlogDetails.css'
-import { Row } from "react-bootstrap";
+// import { Row } from "react-bootstrap";
 import BlogImages from './BlogImages';
 import BlogSuggestion from './BlogSuggestion'
+import axios from 'axios'
+
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const title = "مدرج بصرى";
-  const description = "إن التاريخ الدقيق لبناء المسرح غير معروف، إلا أن أغلب الدراسات تشير إلى أن المسرح بني ما بعد العام 106م عندما اغتنم الرومان فرصة وفاة الملك النبطي رابال الثاني ليضموا المدينة والمقاطعة إلى الإمبراطورية الرومانية ولتصبح مدينة بصرى عاصمة للولاية العربية التابعة للإمبراطورية الرومانية، ويرجح أن المسرح بني ما بين عامي 117-138م خلال فترة الإمبراطور هادريانوس. يعد مسرح بصرى من المسارح الرومانية القليلة التي بقيت محفوظة بصورة متقنة، وإذا أمكن رفع المباني الحديثة التي تحجبه عن الأنظار فإنه يعطينا - أكثر من أي بناء مماثل سواء أكان ذلك في الشرق أو في الغرب - الصورة الكاملة عن داخل المسرح القديم. فالمدرج المنحوت من الحجر البازلتي يظهر بكامل أقسامه وتبدو منصة التمثيل وجميع تفرعاتها غير منقوصة وهي مزينة بمحاريب وأبواب كبيرة، ويتوج البناء رواق مسقوف لا تزال بعض أجزائه ظاهرة، ومسرح بصرى المثال الوحيد في العالم حتى الآن الذي يحتفظ ببعض أعمدة الرواق، والأفاريز التي تعلوها لا تزال قائمة في موضعها الأساسي وهي من الطراز الدوري والكورنثي. تم تشييد المسرح بالحجر البازلتي المحلي، ويبلغ قطر الحجر المستخدم 102 متراً، وطول منصة التمثيل 45.5 متراً، وعمقها 8.5 متراً، ويبلغ ارتفاع المسرح 22 متراً (الشكل5). تخترق المنصة أبوابٌ تؤدي إلى الكواليس، وفي الجدارين الجانبيين حول المنصة شرفات كان يجلس عليها حاكم الولاية وكبار الرسميين والزوار[6]. ويصل الباحة بالخارج ممران معقودان من اليمين واليسار بالأعمدة الدورية، ومنصة التمثيل عريضة وقليلة الارتفاع نسبياً، ووراء الجدار الغربي للمنصة باحة مكشوفة للاستراحة. نجد في المدرج 37 صفاً من المقاعد المتصلة، منها ما هو مخصص للشيوخ وآخر للفرسان والطبقة الوسطى ثم ممر تليه 5 صفوف للعامة، وتوصل إلى المستويات الثلاثة أدراج صاعدة تحت ممرات معقودة تسمح بالدخول والخروج خلال عشر دقائق. وذكر أن هذا المسرح كان يتسع لحوالي عشرة آلاف مشاهد[7]. وكان المشاهدون يرون ويسمعون كل ما يجري في باحة العرض بوضوح.";
+  const [blog, setBlog] = useState({ title: '', content: '' ,main_image:''});([]);
+  const [moreImages, setMoreImages] = useState([]);
+
+
+
+
+  useEffect(() => {
+  const BlogsData = async () => {
+    try {
+      const response = await axios.get(`http://localhost:8000/api/show_bloge/${id}`, {
+       
+      });
+      const data= response.data.blog;
+      console.log(data);
+      setBlog(data);
+      console.log(response.data.more_images);
+
+      setMoreImages(response.data.more_images);
+
+    } catch (error) {
+      console.error('Error fetching user data', error);
+    }
+  };
+ 
+
+  BlogsData();
+}, [id]);
+
+
+
+
+
   return (
+
+
     <div> 
-      <p>id:  {id}</p>
+      <p>id: {id}</p>
       <section className='about w-100'>
       <div className='about-hero w-100'>
         <div className='about-top-section w-100 z-0'>
@@ -22,18 +56,27 @@ const BlogDetails = () => {
         </div>
       </div>
       <div className='blogdetails'>
-      <h3>{title}</h3>
+      <h3>{blog.title}</h3>
       <br/>
-      <p>{description}</p>
+      <p>{blog.content}</p>
       </div>
+     
+      <BlogImages
+        img1={blog.main_image} 
+        img2={moreImages[0]} 
+        img3={moreImages[1]} 
+        img4={moreImages[2]}
+        >
 
-      <BlogImages img1={img1} img2={img2} img3={img2} img4={img2}></BlogImages>
+          </BlogImages>
       
       <BlogSuggestion></BlogSuggestion>
     </section>
     </div>
 
   )
+
 }
+
 
 export default BlogDetails

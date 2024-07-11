@@ -14,6 +14,7 @@ import ShowItemsComponents from '../src/Module/Items/ShowItemsComponents';
 import HeroComponent from './Module/HeroComponentwithSearch/HeroComponent';
 import backgroundImage from '/assets/img/hero.png'
 import ShowBlog from './Module/Blog/ShowBlog';
+import BlogDetails from './Module/Blog/BlogDetails';
 function App() {
 
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path='/blog' element={<ShowBlog/>} />
       <Route path='/blog/nature' element={<ShowBlog type={'1'}/>} />
       <Route path='/blog/marklands' element={<ShowBlog type={'1'}/>} />
+      <Route path="blog/:id" element={<BlogDetails/>} />
       {/* <Route path="blog/:id" element={<BlogDetails/>} /> */}
       {/* <Route path='' element={<HeroSection images={images} backgroundImage={hero} />} />  */}
       <Route path='/aboutSyria' element={<AboutSyria type={'سياحة'}/>} />
