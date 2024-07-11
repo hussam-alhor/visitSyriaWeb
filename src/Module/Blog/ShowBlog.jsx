@@ -59,12 +59,10 @@ const ShowBlog = ({ type }) => {
       // Fetch user data when component mounts
       const fetchUserData = async () => {
         try {
-          const response = await axios.get('http://localhost:8000/api/show_bloge/1', {
-            headers: {
-              Authorization: `Bearer ${localStorage.getItem('token')}`
-            }
+          const response = await axios.get(`http://localhost:8000/api/all_blogs`, {
+           
           });
-          const data= response.data.Admin;
+          const data= response.data.blog;
           console.log(data);
   
 
