@@ -1,0 +1,239 @@
+.booking-form-container {
+    margin-top: 50px;
+    font-family: Frutiger LT Arabic;
+    padding-top: 80px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .form-col {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Frutiger LT Arabic;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 61.41px;
+    /* padding: 30px; */
+  
+
+  }
+  
+  .form-control-custom {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    font-size: 14.81px;
+    font-weight: 400;
+    line-height: 28.41px;
+ 
+
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color:  #8DD3BB !important;
+    border: none;
+    border-color:#8DD3BB !important;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 8px;
+  }
+  
+  .hotel-card {
+    border: none;
+    background-color: #f8f9fa;
+  }
+  
+  .hotel-card-img {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .hotel-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .hotel-card-text {
+    margin-bottom: 10px;
+  }
+  
+  .hotel-card-rating {
+    color: #ffc107;
+  }
+  
+  .hotel-card-price-details {
+    font-weight: bold;
+  }
+  
+  .price-details-list {
+    list-style: none;
+    padding: 0;
+  }
+  .info{
+    font-family: Frutiger LT Arabic;
+    font-size: 18.51px;
+    font-weight: 400;
+    line-height: 35.51px;
+    text-align: right;
+
+  }
+  .text-muted{
+    font-family: Montserrat;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 15.79px;
+    text-align: right;
+
+  }
+
+
+
+
+  .booking-form-container {
+    margin-top: 20px;
+    font-family: 'Frutiger LT Arabic';
+  }
+  
+  .hotel-card {
+    border: none;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Frutiger LT Arabic;
+  
+    
+  }
+  
+  .hotel-card-img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .hotel-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hotel-card-text {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .hotel-card-rating {
+    font-size: 1rem;
+    color: #28a745;
+  }
+  
+  .rating-number {
+    background-color: #d4edda;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  .booking-details {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .details-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Frutiger LT Arabic;
+
+
+  }
+  
+  .price-detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    
+ 
+  }
+  
+
+  
+  
+.hotel-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.hotel-card-img {
+  border-radius: 10px;
+}
+
+.hotel-card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hotel-card-text {
+  font-size: 16px;
+}
+
+.hotel-card-rating {
+  font-size: 16px;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.hotel-card-price-details {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.price-details-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1rem;
+  font-size:30px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #112211;
+
+
+}
+
+.price-details-list li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.price-details-list img {
+  display: block;
+  margin: 10px auto;
+}
+.price-detail-item:not(:last-child) {
+  border-bottom: 1px solid #dee2e6;
+  padding: 10px 0;
+
+}
+.price{
+  font-family: Frutiger LT Arabic;
+font-size: 14.15px;
+font-weight: 700;
+line-height: 27.15px;
+
+
+}
